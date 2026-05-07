@@ -1,0 +1,30 @@
+{
+  "name": "taskrocket-property-management",
+  "version": "1.0.0",
+  "description": "TaskRocket Property Response Agent – escalation rules, vendor dispatch, and tenant messaging automation",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --coverage",
+    "test:watch": "jest --watch",
+    "lint": "eslint src tests"
+  },
+  "keywords": [
+    "property-management",
+    "automation",
+    "airtable",
+    "sms"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  }
+}
